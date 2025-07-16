@@ -14,6 +14,7 @@
             bindings = <&mt LCTRL BSPC>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
     };
 };
 
@@ -31,7 +32,7 @@
 &kp LCTRL  &kp A   &kp S     &kp D     &kp F     &kp G                   &kp H      &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X     &kp C     &kp V     &kp B                   &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
 &trans     &trans  &kp LGUI  &kp LALT  &trans                                       &trans    &kp LBKT   &kp RBKT  &trans    &trans
-                   &mt LSHIFT RET   &mt LCTRL ESC  &kp TAB              &bspc_del  &bspc_del  &mt LSHIFT SPACE
+                   &mt LSHIFT RET   &mt LCTRL TAB  &kp ESC              &bspc_del  &bspc_del  &mt LSHIFT SPACE
                    &mo 1            &mo 1          &mo 2                &kp CAPS   &mo 2     &mo 1
             >;
         };
@@ -40,8 +41,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans    &trans    &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans    &trans    &trans     &trans  &trans
-&trans  &trans  &kp N7  &kp N8  &kp N9  &trans            &trans  &kp HOME  &kp UP    &kp END    &trans  &trans
-&trans  &trans  &kp N4  &kp N5  &kp N6  &trans            &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans  &kp LC(S)  &kp LC(Z)  &kp LC(Y)           &trans  &trans    &kp HOME  &kp UP     &kp END    &trans  &trans
+&trans  &kp LC(A)  &kp LC(X)  &kp LC(C)  &kp LC(V)        &trans  &trans    &kp LEFT  &kp DOWN   &kp RIGHT  &trans  &trans
 &trans  &trans  &kp N1  &kp N2  &kp N3  &trans            &trans  &trans    &trans    &trans     &trans  &trans
 &trans  &trans  &trans  &kp N0  &trans                            &trans    &trans    &trans     &trans  &trans
                                 &trans  &trans  &trans    &trans  &trans    &trans
