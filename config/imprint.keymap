@@ -14,7 +14,13 @@
             bindings = <&mt LCTRL BSPC>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
+    ltt: layer_tap_toggle {
+        compatible = "zmk,behavior-hold-tap";
+        label = "LAYER_TAP_TOGGLE";
+        #binding-cells = <2>;
+        bindings = <&mo>, <&tog>;
+        tapping-term-ms = <200>;
+};
     };
 };
 
@@ -33,7 +39,7 @@
 &kp LSHFT  &kp Z   &kp X     &kp C     &kp V     &kp B                   &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
 &trans     &trans  &kp LGUI  &kp LALT  &trans                                       &trans    &kp LBKT   &kp RBKT  &trans    &trans
                    &mt LSHIFT RET   &mt LCTRL TAB  &kp ESC              &bspc_del  &bspc_del  &mt LSHIFT SPACE
-                   &mt <&mo 1> <&tog 1>            &mo 3          &mo 2                &kp CAPS   &mo 2     &mo 1
+                   &ltt 1 1           &mo 3          &mo 2                &kp CAPS   &mo 2     &mo 1
             >;
         };
 
