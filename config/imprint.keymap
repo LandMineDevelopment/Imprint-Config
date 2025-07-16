@@ -11,7 +11,7 @@
         bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            bindings = <&mt LCTRL BSPC>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
@@ -31,7 +31,7 @@
 &kp LCTRL  &kp A   &kp S     &kp D     &kp F     &kp G                   &kp H      &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X     &kp C     &kp V     &kp B                   &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
 &trans     &trans  &kp LGUI  &kp LALT  &trans                                       &trans    &kp LBKT   &kp RBKT  &trans    &trans
-                   &mt LSHIFT RET   &mt LCTRL DEL  &kp ESC              &bspc_del  &mt LCTRL BSPC  &mt LSHIFT SPACE
+                   &mt LSHIFT RET   &mt LCTRL DEL  &kp ESC              &bspc_del  &bspc_delf  &mt LSHIFT SPACE
                    &mo 1            &mo 1          &mo 2                &kp CAPS   &mo 2     &mo 1
             >;
         };
