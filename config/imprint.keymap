@@ -49,8 +49,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp ENT>
-                , <&macro_tap &tog BASE>
+                = <&macro_tap &kp ENT &tog BASE>
                 ;
         };
     };
