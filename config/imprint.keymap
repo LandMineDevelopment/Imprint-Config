@@ -32,7 +32,7 @@
             compatible = "zmk,behavior-hold-tap";
             //label = "RETRO_SYM_LAYER";
             flavor = "balanced";
-            retro-tap;
+            //retro-tap;
             #binding-cells = <1>;
             bindings = <&mo SYM>, <&kp>;
             tapping-term-ms = <200>;
