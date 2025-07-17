@@ -82,8 +82,8 @@
 &trans  &trans    &trans    &trans     &trans    &trans     &trans  &trans    &trans    &trans     &trans     &trans
 &trans  &trans    &trans    &trans     &trans    &trans     &trans  &trans    &trans    &trans     &trans     &trans
 &trans  &trans    &kp LC(S) &kp LC(Z)  &kp LC(Y) &trans     &trans  &kp HOME  &kp UP    &kp END    &trans     &trans
-&trans  &kp LC(A) &kp LC(X) &kp LC(C) &kp LC(V)  &trans     &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
-&trans  &trans    &trans    &trans    &trans     &trans     &trans  &trans    &trans    &trans     &trans     &trans
+&trans  &kp LC(A) &kp LC(X) &kp LC(C)  &kp LC(V) &trans     &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
+&trans  &trans    &trans    &trans     &trans    &trans     &trans  &trans    &trans    &trans     &trans     &trans
 &trans  &trans    &trans    &trans  &trans                          &trans    &trans    &trans     &trans     &trans
                                 &trans  &trans  &trans       &trans  &trans    &trans
                                 &trans  &trans  &trans       &trans  &trans    &trans
