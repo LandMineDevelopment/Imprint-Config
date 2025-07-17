@@ -48,7 +48,8 @@
         exit_num: exit_num {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp RET &tog NUM>;
+            bindings = <&macro_tap &kp RET>
+                     , <&macro_tap &tog NUM>;
         };
     };
     
