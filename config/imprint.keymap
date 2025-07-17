@@ -49,7 +49,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_tap &kp RET>;
-                     , <&macro_tap &tog NUM>;
+                     , <&tog NUM>;
         };
     };
     
