@@ -8,8 +8,9 @@
 #define BASE 0
 #define NAV 1
 #define NUM 2
-#define CONTROL 3
-#define MOUSE 4
+#define SYM 3
+#define CONTROL 4
+#define MOUSE 5
 
 / {
     behaviors {
@@ -73,7 +74,7 @@
 &kp LSHFT  &kp Z   &kp X     &kp C     &kp V     &kp B                   &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
 &trans     &trans  &kp LGUI  &kp LALT  &trans                                       &trans    &kp LBKT   &kp RBKT  &trans    &trans
                    &mt LSHIFT RET   &mt LCTRL TAB  &kp ESC              &bspc_del  &bspc_del  &mt LSHIFT SPACE
-                   &ltt NAV NAV     &mo MOUSE      &mo 2                &kp CAPS   &mo 2     &mo 1
+                   &ltt NAV NAV     &mo MOUSE      &mo CONTROL          &kp CAPS   &mo 2      &ltt SYM SYM
             >;
         };
 
@@ -92,23 +93,34 @@
 
         Numpad_Layer {
             bindings = <
-&trans   &trans  &trans  &trans  &trans  &trans            &trans  &trans     &trans     &trans     &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans            &trans  &trans     &trans     &trans     &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans            &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans  &trans  
-&tog NUM &trans  &trans  &trans  &trans  &trans            &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans            &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans  &trans
-&trans   &trans  &trans  &trans  &trans                            &trans     &kp KP_N0  &trans     &trans  &trans
+&trans   &trans  &trans     &trans    &trans  &trans            &trans  &trans     &trans     &trans     &trans  &trans
+&trans   &trans  &trans     &trans    &trans  &trans            &trans  &trans     &trans     &trans     &trans  &trans
+&trans   &trans  &trans     &trans    &trans  &trans            &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans  &trans  
+&trans   &trans  &kp UNDER  &kp COMMA &kp DOT &tog NUM          &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans  &trans
+&trans   &trans  &trans     &trans    &trans  &trans            &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans  &trans
+&trans   &trans  &trans     &trans  &trans                              &trans     &kp KP_N0  &trans     &trans  &trans
                              &exit_num  &trans  &trans    &trans  &trans    &trans
                                 &trans  &trans  &trans    &trans  &trans    &trans
             >;
         };
 
+        Symbols_Layer {
+            bindings = <
+&trans  &trans  &trans     &trans     &trans     &trans            &trans    &trans   &trans    &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans            &trans    &trans   &trans    &trans  &trans  &trans
+&trans  &trans  &kp CARET  &kp LT     &kp GT     &trans            &trans    &kp EXCL &kp PLUS  &kp EQUAL  &trans  &trans
+&trans  &trans  &kp MINUS  &kp LBKT  &kp RBKT    &kp SLASH         &kp STAR  &kp LPAR &kp RPAR  &kp UNDER  &trans  &trans
+&trans  &trans  &kp AT     &kp MINUS &kp UNDER   &kp PIPE          &kp AMPS  &kp SQT  &kp DQT   &kp PRCNT  &trans  &trans
+&trans  &trans  &trans     &trans     &trans                                 &trans   &trans    &trans  &trans  &trans
+                                      &trans     &trans  &trans    &trans  &trans  &trans
+                                      &trans     &trans  &trans    &trans  &trans  &trans        
+
         Keyboard_Control_Layer {
             bindings = <
-&trans       &trans        &trans        &trans        &trans        &trans                  &trans  &trans           &trans           &trans           &trans           &trans
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &trans           &trans           &trans
+&trans       &trans        &trans        &trans        &trans        &trans                  &trans           &trans           &trans           &trans           &trans           &trans
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &trans           &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &trans           &trans           &trans
 &sys_reset   &trans        &trans        &trans        &trans        &trans                  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &sys_reset
-&bootloader  &trans        &trans        &trans        &trans        &trans                  &trans  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &bootloader
+&bootloader  &trans        &trans        &trans        &trans        &trans                  &trans           &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &bootloader
 &to 4        &trans        &trans        &trans        &trans        &trans                  &trans  &trans           &trans           &trans           &trans           &to 4
 &to 4        &trans        &trans        &trans        &trans                                        &trans           &trans           &trans           &trans           &to 4
                                                        &trans        &trans        &trans    &trans  &trans           &trans
