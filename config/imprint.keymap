@@ -73,7 +73,7 @@
 &kp LSHFT  &kp Z   &kp X     &kp C     &kp V     &kp B                   &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
 &trans     &trans  &kp LGUI  &kp LALT  &trans                                       &trans    &kp LBKT   &kp RBKT  &trans    &trans
                    &mt LSHIFT RET   &mt LCTRL TAB  &kp ESC              &bspc_del  &bspc_del  &mt LSHIFT SPACE
-                   &ltt NAV NAV     &mo 3          &mo 2                &kp CAPS   &mo 2     &mo 1
+                   &ltt NAV NAV     &mo MOUSE      &mo 2                &kp CAPS   &mo 2     &mo 1
             >;
         };
 
@@ -81,8 +81,8 @@
             bindings = <
 &trans  &trans    &trans    &trans     &trans    &trans     &trans  &trans    &trans    &trans     &trans     &trans
 &trans  &trans    &trans    &trans     &trans    &trans     &trans  &trans    &trans    &trans     &trans     &trans
-&trans  &trans    &kp LC(S) &kp LC(Z)  &kp LC(Y) &trans     &trans  &trans    &kp HOME  &kp UP     &kp END    &trans  
-&trans  &kp LC(A) &kp LC(X) &kp LC(C) &kp LC(V)  &trans     &trans  &trans    &kp LEFT  &kp DOWN   &kp RIGHT  &trans
+&trans  &trans    &kp LC(S) &kp LC(Z)  &kp LC(Y) &trans     &trans  &kp HOME  &kp UP    &kp END    &trans     &trans
+&trans  &kp LC(A) &kp LC(X) &kp LC(C) &kp LC(V)  &trans     &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
 &trans  &trans    &trans    &trans    &trans     &trans     &trans  &trans    &trans    &trans     &trans     &trans
 &trans  &trans    &trans    &trans  &trans                          &trans    &trans    &trans     &trans     &trans
                                 &trans  &trans  &trans       &trans  &trans    &trans
@@ -148,8 +148,8 @@
 
 &trackball_peripheral_listener {
     input-processors =
-//     activate layer 3 within 500ms of the trackball moving
-     <&zip_temp_layer 3 500>;
+//     activate layer MOUSE within 500ms of the trackball moving
+     <&zip_temp_layer MOUSE 500>;
  };
 
 //left hand trackball configuration
