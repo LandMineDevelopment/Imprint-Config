@@ -26,7 +26,7 @@
             bindings = <&mo>, <&tog>;
             tapping-term-ms = <200>;
         };
-        tog_off: toggle_layer_on_only {
+        tog_off: toggle_layer_off_only {
             compatible = "zmk,behavior-toggle-layer";
             #binding-cells = <1>;
             display-name = "Toggle Layer Off";
@@ -38,7 +38,7 @@
         compatible = "zmk,combos";
         combo_num_layer {
             timeout-ms = <50>;
-            key-positions = <44 45>;
+            key-positions = <43 44>;
             bindings = <&tog NUM>;
             layers = <BASE>;
         };
@@ -48,7 +48,7 @@
         exit_num: exit_num {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp RET &tog BASE>;
+            bindings = <&macro_tap &kp RET &tog NUM>;
         };
     };
     
