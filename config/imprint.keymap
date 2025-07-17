@@ -22,14 +22,14 @@
         };
         ltt: layer_tap_toggle {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TOGGLE";
+            //label = "LAYER_TAP_TOGGLE";
             #binding-cells = <2>;
             bindings = <&mo>, <&tog>;
             tapping-term-ms = <200>;
         };
         rsl: retro_symbol_layer {
             compatible = "zmk,behavior-hold-tap";
-            label = "RETRO_SYM_LAYER";
+            //label = "RETRO_SYM_LAYER";
             flavor = "balanced";
             retro-tap;
             #binding-cells = <1>;
