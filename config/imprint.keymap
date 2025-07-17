@@ -56,7 +56,11 @@
 
 };
 
-ZMK_MACRO(exit_num, bindings = <&kp RET>; )
+ZMK_MACRO(exit_num,
+          wait-ms = <30>;
+          tap-ms = <40>;
+          bindings = <&kp RET>;           
+)
 
 / {
     chosen { zmk,matrix-transform = &imprint_function_row_full_bottom_row; };
