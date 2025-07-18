@@ -60,6 +60,21 @@
             bindings = <&tog NAV>;
             layers = <BASE>;
         };
+        combo_mlc {
+            timeout-ms = <10>;
+            key-positions = <27 28>;
+            bindings = <&mkp LCLK>;
+        };
+        combo_mrc {
+            timeout-ms = <10>;
+            key-positions = <26 27>;
+            bindings = <&mkp RCLK>;
+        };
+        combo_mmc {
+            timeout-ms = <10>;
+            key-positions = <26 28>;
+            bindings = <&mkp MCLK>;
+        };
     };
 
     macros {
