@@ -6,8 +6,8 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 #define BASE 0
-#define NAV 1
-#define NUM 2
+#define NUM 1
+#define NAV 2
 #define SYM 3
 #define CONTROL 4
 #define MOUSE 5
@@ -54,6 +54,12 @@
             bindings = <&tog NUM>;
             layers = <BASE>;
         };
+        combo_nav_layer {
+            timeout-ms = <10>;
+            key-positions = <39 40>;
+            bindings = <&tog NAV>;
+            layers = <BASE>;
+        };
     };
 
     macros {
@@ -81,24 +87,11 @@
 &kp ESC    &kp F1  &kp F2    &kp F3    &kp F4     &kp F5                  &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11
 &kp EQUAL  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                  &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB    &kp Q   &kp W     &kp E     &kp R      &kp T                   &kp Y      &kp U     &kp I      &kp O     &kp P     &kp BSLH
-&kp LCTRL  &kp A   &kp S     &kp D     &rl SYM F  &kp G                   &kp H      &rl SYM J    &kp K      &kp L     &kp SEMI  &kp SQT
+&to 0      &kp A   &kp S     &kp D     &rl SYM F  &kp G                   &kp H      &rl SYM J &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B                   &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&trans     &trans  &kp LGUI  &kp LALT  &trans                                       &trans    &kp LBKT   &kp RBKT  &trans    &trans
-                   &mt LSHIFT RET   &mt LCTRL TAB  &kp ESC              &bspc_del  &bspc_del  &mt LSHIFT SPACE
-                   &ltt NAV NAV     &mo MOUSE      &mo CONTROL          &kp CAPS   &mo 2      &ltt SYM SYM
-            >;
-        };
-
-        Nav_Layer {
-            bindings = <
-&trans  &trans    &trans    &trans     &trans    &trans     &trans  &trans    &trans    &trans     &trans     &trans
-&trans  &trans    &trans    &trans     &trans    &trans     &trans  &trans    &trans    &trans     &trans     &trans
-&trans  &trans    &kp LC(S) &kp LC(Z)  &kp LC(Y) &trans     &trans  &kp HOME  &kp UP    &kp END    &trans     &trans
-&trans  &kp LC(A) &kp LC(X) &kp LC(C)  &kp LC(V) &trans     &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
-&trans  &trans    &trans    &trans     &trans    &trans     &trans  &kp PG_UP &trans    &kp PG_DN  &trans     &trans
-&trans  &trans    &trans    &trans  &trans                          &trans    &trans    &trans     &trans     &trans
-                                &trans  &trans  &trans       &trans  &trans    &trans
-                                &trans  &trans  &trans       &trans  &trans    &trans
+&trans     &trans  &kp LGUI  &kp LALT  &trans                                        &trans    &kp LBKT   &kp RBKT  &trans    &trans
+                   &mt LSHIFT RET   &mt LCTRL TAB  &kp ESC                &bspc_del  &bspc_del  &mt LSHIFT SPACE
+                   &mo NAV          &mo MOUSE      &mo CONTROL            &kp CAPS   &mo 2      &mo SYM
             >;
         };
 
@@ -110,8 +103,21 @@
 &trans   &trans  &kp UNDER  &kp COMMA &kp DOT &tog NUM          &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans  &trans
 &trans   &trans  &trans     &trans    &trans  &trans            &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans  &trans
 &trans   &trans  &trans     &trans  &trans                              &trans     &kp KP_N0  &trans     &trans  &trans
-                             &exit_num  &trans  &trans    &trans  &trans    &trans
-                                &trans  &trans  &trans    &trans  &trans    &trans
+                            &exit_num  &trans  &trans           &trans  &trans     &trans
+                            &trans  &trans  &trans              &trans  &trans     &trans
+            >;
+        };
+
+        Nav_Layer {
+            bindings = <
+&trans  &trans    &trans    &trans      &trans        &trans             &trans  &trans    &trans    &trans     &trans     &trans
+&trans  &trans    &trans    &trans      &trans        &trans             &trans  &trans    &trans    &trans     &trans     &trans
+&trans  &trans    &kp LC(S) &kp LC(Z)   &kp LC(Y)     &trans             &trans  &kp HOME  &kp UP    &kp END    &trans     &trans
+&trans  &kp LC(A) &kp LC(X) &kp LC(C)   &kp LC(V)     &tog NAV           &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
+&trans  &trans    &trans    &kp LC(RET) &kp LC(SLASH) &trans             &trans  &kp PG_UP &trans    &kp PG_DN  &trans     &trans
+&trans  &trans    &trans    &trans  &trans                                       &trans    &trans    &trans     &trans     &trans
+                                &trans  &trans  &trans                      &trans  &trans    &trans
+                                &trans  &trans  &trans                      &trans  &trans    &trans
             >;
         };
 
