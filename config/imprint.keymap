@@ -35,7 +35,7 @@
             //retro-tap;
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <130>;
         };
         
         tog_off: toggle_layer_off_only {
