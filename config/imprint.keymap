@@ -142,7 +142,7 @@
 &trans  &trans  &trans     &trans     &trans     &trans            &trans    &trans   &trans    &trans  &trans  &trans
 &trans  &trans  &kp CARET  &kp LT     &kp GT     &trans            &trans    &kp EXCL &kp PLUS  &kp EQUAL  &trans  &trans
 &trans  &trans  &kp MINUS  &kp LBKT  &kp RBKT    &kp SLASH         &kp STAR  &kp LPAR &kp RPAR  &kp UNDER  &trans  &trans
-&trans  &trans  &kp AT     &kp MINUS &kp UNDER   &kp PIPE          &kp AMPS  &kp SQT  &kp DQT   &kp PRCNT  &trans  &trans
+&trans  &trans  &kp AT     &kp PIPE  &kp AMPS    &trans            &trans    &kp SQT  &kp DQT   &kp PRCNT  &trans  &trans
 &trans  &trans  &trans     &trans     &trans                                 &trans   &trans    &trans  &trans  &trans
                                       &trans     &trans  &trans    &trans  &trans  &trans
                                       &trans     &trans  &trans    &trans  &trans  &trans        
