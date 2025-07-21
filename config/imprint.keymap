@@ -20,6 +20,7 @@
             bindings = <&mt LSHIFT BSPC>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        
         ltt: layer_tap_toggle {
             compatible = "zmk,behavior-hold-tap";
             //label = "LAYER_TAP_TOGGLE";
@@ -84,6 +85,16 @@
             bindings = <&macro_tap &kp RET>
                      , <&tog NUM>;
         };
+        vim_word: vim_next_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LC(RIGHT) &kp LC(RIGHT) &kp LC(LEFT)>;
+        };
+        vim_back: vim_back_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LC(LEFT)>;
+        };
     };
     
 
@@ -128,7 +139,7 @@
 &trans  &trans    &trans    &trans      &trans        &trans             &trans  &trans    &trans    &trans     &trans     &trans
 &trans  &trans    &trans    &trans      &trans        &trans             &trans  &trans    &trans    &trans     &trans     &trans
 &trans  &trans    &kp LC(S) &kp LC(Z)   &kp LC(Y)     &trans             &trans  &kp HOME  &kp UP    &kp END    &trans     &trans
-&trans  &kp LC(A) &kp LC(X) &kp LC(C)   &kp LC(V)     &tog NAV           &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
+&trans  &kp LC(A) &kp LC(X) &kp LC(C)   &kp LC(V)     &tog NAV           &trans  &vim_back &kp DOWN  &vim_word  &trans     &trans
 &trans  &trans    &trans    &kp LC(RET) &kp LC(SLASH) &trans             &trans  &kp PG_UP &trans    &kp PG_DN  &trans     &trans
 &trans  &trans    &trans    &trans  &trans                                       &trans    &trans    &trans     &trans     &trans
                                 &trans  &trans  &trans                      &trans  &trans    &trans
