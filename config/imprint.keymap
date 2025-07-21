@@ -105,8 +105,8 @@
 &to 0      &kp A   &kp S     &kp D     &rl SYM F  &kp G                   &kp H      &rl SYM J &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B                   &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
 &trans     &trans  &kp LGUI  &kp LALT  &trans                                        &trans    &kp LBKT   &kp RBKT  &trans    &trans
-                   &mt LSHIFT RET   &mt LCTRL TAB  &kp ESC                &bspc_del  &bspc_del  &mt LSHIFT SPACE
-                   &mo NAV          &mo MOUSE      &mo CONTROL            &kp CAPS   &mo 2      &mo SYM
+                   &bspc_del   &mt LCTRL TAB  &kp ESC                &bspc_del  &mt LSHIFT RET  &mt LSHIFT SPACE
+                   &mo NAV     &mo MOUSE      &mo CONTROL            &kp CAPS   &mo 2      &mo SYM
             >;
         };
 
