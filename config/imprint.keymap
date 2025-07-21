@@ -17,7 +17,7 @@
         bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&mt LCTRL BSPC>, <&kp DELETE>;
+            bindings = <&mt LSHIFT BSPC>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         ltt: layer_tap_toggle {
@@ -105,7 +105,7 @@
 &to 0      &kp A   &kp S     &kp D     &rl SYM F  &kp G                   &kp H      &rl SYM J &kp K      &kp L     &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B                   &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
 &trans     &trans  &kp LGUI  &kp LALT  &trans                                        &trans    &kp LBKT   &kp RBKT  &trans    &trans
-                   &bspc_del   &mt LCTRL TAB  &kp ESC                &bspc_del  &mt LSHIFT RET  &mt LSHIFT SPACE
+                   &bspc_del   &mt LCTRL TAB  &kp ESC                &bspc_del  &mt LCTRL RET  &mt LSHIFT SPACE
                    &mo NAV     &mo MOUSE      &mo CONTROL            &kp CAPS   &mo 2      &mo SYM
             >;
         };
