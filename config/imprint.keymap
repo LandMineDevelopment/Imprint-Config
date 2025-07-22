@@ -90,7 +90,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             
-            bindings =  <&macro_tap_time 0>
+            bindings =  <&macro_tap_time 0>,
                         <&macro_tap &kp LC(RIGHT) &kp LC(RIGHT) &kp LC(LEFT)>;
         };
         vim_back: vim_back_word {
