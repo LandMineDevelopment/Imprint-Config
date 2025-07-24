@@ -34,12 +34,11 @@
 
         rl: retro_layer {
             compatible = "zmk,behavior-hold-tap";
-            //label = "RETRO_LAYER";
             flavor = "balanced";
-            //retro-tap;
+            retro-tap;
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
-            tapping-term-ms = <130>;
+            tapping-term-ms = <90>;
         };
         
         tog_off: toggle_layer_off_only {
