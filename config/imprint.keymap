@@ -82,7 +82,7 @@
         };
         combo_nav_layer {
             timeout-ms = <10>;
-            key-positions = <39 40>;
+            key-positions = <50 51>;
             bindings = <&tog NAV>;
             layers = <BASE>;
         };
