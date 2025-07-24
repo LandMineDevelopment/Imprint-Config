@@ -14,6 +14,7 @@
 #define CONTROL 5
 #define MOUSE 6
 
+#define COMBO_TAP_TIME 10
 
 / {
     behaviors {
@@ -52,51 +53,51 @@
     combos {
         compatible = "zmk,combos";
         combo_tab {
-            timeout-ms = <10>;
+            timeout-ms = <COMBO_TAP_TIME>;
             key-positions = <43 44>;
             bindings = <&kp TAB>;
         };
         combo_enter {
-            timeout-ms = <10>;
+            timeout-ms = <COMBO_TAP_TIME>;
             key-positions = <44 45>;
             bindings = <&kp RET>;
             layers = <BASE>;
         };
         combo_num_enter {
-            timeout-ms = <10>;
+            timeout-ms = <COMBO_TAP_TIME>;
             key-positions = <44 45>;
             bindings = <&exit_num>;
             layers = <NUM>;
         };
         combo_back {
-            timeout-ms = <10>;
+            timeout-ms = <COMBO_TAP_TIME>;
             key-positions = <32 33>;
             bindings = <&bspc_del>;
         };
         combo_num_layer {
-            timeout-ms = <10>;
+            timeout-ms = <COMBO_TAP_TIME>;
             key-positions = <56 57>;
             bindings = <&tog NUM>;
             layers = <BASE>;
         };
         combo_nav_layer {
-            timeout-ms = <10>;
+            timeout-ms = <COMBO_TAP_TIME>;
             key-positions = <50 51>;
             bindings = <&tog NAV>;
             layers = <BASE>;
         };
         combo_mlc {
-            timeout-ms = <10>;
+            timeout-ms = <COMBO_TAP_TIME>;
             key-positions = <27 28>;
             bindings = <&mkp LCLK>;
         };
         combo_mrc {
-            timeout-ms = <10>;
+            timeout-ms = <COMBO_TAP_TIME>;
             key-positions = <26 27>;
             bindings = <&mkp RCLK>;
         };
         combo_mmc {
-            timeout-ms = <10>;
+            timeout-ms = <COMBO_TAP_TIME>;
             key-positions = <26 28>;
             bindings = <&mkp MCLK>;
         };
