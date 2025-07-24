@@ -150,11 +150,11 @@
 &kp ESC    &kp F1  &kp F2    &kp F3     &kp F4     &kp F5                  &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &kp F11
 &kp EQUAL  &kp N1  &kp N2    &kp N3     &kp N4     &kp N5                  &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB    &kp Q   &kp W     &kp E      &kp R      &kp T                   &kp Y      &kp U     &kp I      &kp O     &kp P     &kp BSLH
-&to 0      &kp A   &kp S     &rl NAV2 D &rl SYM F  &kp G                   &kp H      &rl SYM J &rl NAV2 K &kp L     &kp SEMI  &kp SQT
+&to 0      &kp A   &rl SYM S &rl NUM D &rl NAV F   &kp G                   &kp H      &rl NAV J &rl NUM K &rl SYM L &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X     &kp C      &kp V      &kp B                   &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&trans     &trans  &kp LGUI  &kp LALT  &trans                                        &trans    &kp LBKT   &kp RBKT  &trans    &trans
-                   &bspc_del   &mt LCTRL TAB  &kp ESC                &bspc_del  &mt LCTRL RET  &mt LSHIFT SPACE
-                   &mo NAV     &mo MOUSE      &mo CONTROL            &kp CAPS   &mo 2      &mo SYM
+&trans     &trans  &kp LGUI  &kp LALT  &trans                                         &trans    &kp LBKT   &kp RBKT  &trans    &trans
+                   &mt LSHIFT SPACE   &mt LCTRL ESC  &kp ESC                &bspc_del  &mt LCTRL ESC  &mt LSHIFT SPACE
+                   &mo NAV            &mo MOUSE      &mo CONTROL            &kp CAPS   &mo 2      &mo SYM
             >;
         };
 
