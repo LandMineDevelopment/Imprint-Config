@@ -34,7 +34,7 @@
 
         rl: retro_layer {
             compatible = "zmk,behavior-hold-tap";
-            flavor = "balanced";
+            flavor = "tap-preferred";
             retro-tap;
             #binding-cells = <2>;
             bindings = <&mo>, <&kp>;
