@@ -5,6 +5,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
+
 #define BASE 0
 #define NUM 1
 #define NAV 2
@@ -12,6 +13,7 @@
 #define SYM 4
 #define CONTROL 5
 #define MOUSE 6
+
 
 / {
     behaviors {
@@ -50,9 +52,31 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_num_layer {
+        combo_tab {
             timeout-ms = <10>;
             key-positions = <43 44>;
+            bindings = <&kp TAB>;
+        };
+        combo_enter {
+            timeout-ms = <10>;
+            key-positions = <44 45>;
+            bindings = <&kp RET>;
+            layers = <BASE>;
+        };
+        combo_num_enter {
+            timeout-ms = <10>;
+            key-positions = <44 45>;
+            bindings = <&exit_num>;
+            layers = <NUM>;
+        };
+        combo_back {
+            timeout-ms = <10>;
+            key-positions = <32 33>;
+            bindings = <&bspc_del>;
+        };
+        combo_num_layer {
+            timeout-ms = <10>;
+            key-positions = <56 57>;
             bindings = <&tog NUM>;
             layers = <BASE>;
         };
