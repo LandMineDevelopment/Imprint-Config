@@ -13,7 +13,7 @@
 #define CONTROL 4
 #define MOUSE 5
 
-#define COMBO_TAP_TIME 10
+#define COMBO_TAP_TIME 15
 
 
 / {
@@ -91,8 +91,8 @@
         combo_num_layer {
             timeout-ms = <COMBO_TAP_TIME>;
             key-positions = <56 57>;
-            bindings = <&tog NUM>;
-            layers = <BASE>;
+            bindings = <&to NUM>;
+            layers = <BASE, NUM>;
         };
         combo_nav_layer {
             timeout-ms = <COMBO_TAP_TIME>;
