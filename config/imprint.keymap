@@ -200,8 +200,8 @@
 
         Symbols_Layer {
             bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans            &trans    &trans   &trans    &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans    &trans   &trans    &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans            &trans    &trans   &trans    &trans     &trans  &trans
+&kp F1  &kp F2  &kp F3     &kp F4     &kp F5     &kp F6            &kp F7    &kp F8   &kp F9    &kp F10    &kp F11 &kp F12
 &trans  &trans  &kp CARET  &kp LT     &kp GT     &trans            &trans    &kp EXCL &kp PLUS  &kp EQUAL  &trans  &trans
 &trans  &trans  &kp MINUS  &kp LBKT  &kp RBKT    &kp SLASH         &kp STAR  &kp LPAR &kp RPAR  &kp UNDER  &trans  &trans
 &trans  &trans  &kp AT     &kp PIPE  &kp AMPS    &trans            &trans    &kp SQT  &kp DQT   &kp PRCNT  &trans  &trans
