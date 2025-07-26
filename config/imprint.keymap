@@ -92,7 +92,7 @@
             timeout-ms = <COMBO_TAP_TIME>;
             key-positions = <56 57>;
             bindings = <&to NUM>;
-            layers = <BASE, NUM>;
+            layers = <BASE NUM>;
         };
         combo_nav_layer {
             timeout-ms = <COMBO_TAP_TIME>;
