@@ -124,6 +124,27 @@
             bindings = <&macro_tap &kp RET>
                      , <&tog NUM>;
         };
+        mlc_exit: mlc_exit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &mkp LCLK>
+                     , <&macro_pause_for_release>
+                     , <&macro_release &mkp LCLK;
+        };
+        mrc_exit: mrc_exit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &mkp RCLK>
+                     , <&macro_pause_for_release>
+                     , <&macro_release &mkp RCLK;
+        };
+        mmc_exit: mmc_exit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &mkp MCLK>
+                     , <&macro_pause_for_release>
+                     , <&macro_release &mkp MCLK;
+        };
         vim_word: vim_next_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -229,7 +250,7 @@
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mrc_exit  &mmc_exit  &mlc_exit  &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans                               &trans  &trans  &trans  &trans  &trans
                                       &trans     &trans  &trans    &trans  &trans  &trans
@@ -257,7 +278,7 @@
 &trackball_peripheral_listener {
     input-processors =
 //     activate layer MOUSE within 500ms of the trackball moving
-     <&zip_temp_layer MOUSE 500>;
+     <&zip_temp_layer MOUSE 5000>;
  };
 
 //left hand trackball configuration
