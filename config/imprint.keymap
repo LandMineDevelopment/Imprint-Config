@@ -278,11 +278,11 @@
 
 // right hand trackball configuration
 
-&trackball_peripheral_listener {
-    input-processors =
+//&trackball_peripheral_listener {
+//    input-processors =
 //     activate layer MOUSE within 500ms of the trackball moving
-    <&zip_temp_layer MOUSE 1250>;
- };
+//    <&zip_temp_layer MOUSE 1250>;
+// };
 
 //left hand trackball configuration
 
