@@ -253,7 +253,7 @@
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mrc_exit  &mmc_exit  &mlc_exit  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans                               &trans  &trans  &trans  &trans  &trans
                                       &trans     &trans  &trans    &trans  &trans  &trans
@@ -281,7 +281,7 @@
 &trackball_peripheral_listener {
     input-processors =
 //     activate layer MOUSE within 500ms of the trackball moving
-    <&zip_temp_layer MOUSE 1500>;
+    <&zip_temp_layer MOUSE 5000>;
  };
 
 //left hand trackball configuration
