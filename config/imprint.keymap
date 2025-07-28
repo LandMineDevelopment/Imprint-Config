@@ -177,7 +177,7 @@
         zip_toggle_mouse_layer: zip_toggle_mouse_layer {
             compatible = "zmk,input-processor-behaviors";
             #input-processor-cells = <0>;
-            codes    = INPUT_EV_REL;
+            codes    = <INPUT_EV_REL>;
             bindings = <&tog MOUSE>;
         };
     };   
