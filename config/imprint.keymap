@@ -181,10 +181,10 @@
             bindings = <&tog MOUSE>;
         };
     };   
-    /omit-if-no-ref/ zip_temp_layer: zip_temp_layer {
+    zip_temp_layer: zip_temp_layer {
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
-        excluded-positions = <0>;
+        excluded-positions = <999>;
     };
 
 };
