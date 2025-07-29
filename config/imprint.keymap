@@ -14,7 +14,7 @@
 #define CONTROL 4
 #define MOUSE 5
 
-#define COMBO_TAP_TIME 30
+#define COMBO_TAP_TIME 15
 
 
 / {
