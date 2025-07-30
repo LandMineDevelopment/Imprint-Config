@@ -81,6 +81,7 @@
         };
         combo_back {
             timeout-ms = <COMBO_TAP_TIME>;
+            require-prior-idle-ms = <30>;
             key-positions = <32 33>;
             bindings = <&bspc_del>;
         };
@@ -296,8 +297,8 @@
     //input-processors =
 //     activate layer MOUSE within 5000ms of the trackball moving
    // <&zip_temp_layer MOUSE 1250>;
-    //zmk_keymap_layer_activate(MOUSE);
-    bindings = <&to MOUSE>;
+    zmk_keymap_layer_activate(MOUSE);
+    //bindings = <&to MOUSE>;
  };
 
 //left hand trackball configuration
