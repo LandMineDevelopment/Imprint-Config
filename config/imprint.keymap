@@ -296,8 +296,8 @@
 &trackball_peripheral_listener {
     input-processors =
 //     activate layer MOUSE within 5000ms of the trackball moving
-   // <&zip_temp_layer MOUSE 1250>;
-    zmk_keymap_layer_activate(MOUSE);
+    <&zip_temp_layer MOUSE 1250>;
+    //zmk_keymap_layer_activate(MOUSE);
     //bindings = <&to MOUSE>;
  };
 
