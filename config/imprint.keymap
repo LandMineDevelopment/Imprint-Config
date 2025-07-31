@@ -15,6 +15,7 @@
 #define MOUSE 5
 
 #define COMBO_TAP_TIME 15
+#define COMBO_PRIOR_IDLE_TIME 30
 
 
 / {
@@ -64,40 +65,47 @@
         compatible = "zmk,combos";
         combo_tab {
             timeout-ms = <COMBO_TAP_TIME>;
+            require-prior-idle-ms = <COMBO_PRIOR_IDLE_TIME>;
             key-positions = <43 44>;
             bindings = <&kp TAB>;
         };
         combo_enter {
             timeout-ms = <COMBO_TAP_TIME>;
+            require-prior-idle-ms = <COMBO_PRIOR_IDLE_TIME>;
             key-positions = <44 45>;
             bindings = <&kp RET>;
             layers = <BASE>;
         };
         combo_num_enter {
             timeout-ms = <COMBO_TAP_TIME>;
+            require-prior-idle-ms = <COMBO_PRIOR_IDLE_TIME>;
             key-positions = <44 45>;
             bindings = <&exit_num>;
             layers = <NUM>;
         };
         combo_back {
             timeout-ms = <COMBO_TAP_TIME>;
-            require-prior-idle-ms = <30>;
+            require-prior-idle-ms = <COMBO_PRIOR_IDLE_TIME>;
+            require-prior-idle-ms = <COMBO_PRIOR_IDLE_TIME>;
             key-positions = <32 33>;
             bindings = <&bspc_del>;
         };
         combo_back2 {
             timeout-ms = <COMBO_TAP_TIME>;
+            require-prior-idle-ms = <COMBO_PRIOR_IDLE_TIME>;
             key-positions = <26 27>;
             bindings = <&bspc_del>;
         };
         combo_num_layer {
             timeout-ms = <COMBO_TAP_TIME>;
+            require-prior-idle-ms = <COMBO_PRIOR_IDLE_TIME>;
             key-positions = <56 57>;
             bindings = <&to NUM>;
             layers = <BASE NUM>;
         };
         combo_nav_layer {
             timeout-ms = <COMBO_TAP_TIME>;
+            require-prior-idle-ms = <COMBO_PRIOR_IDLE_TIME>;
             key-positions = <50 51>;
             bindings = <&tog NAV>;
             layers = <BASE>;
@@ -185,7 +193,7 @@
     zip_temp_layer: zip_temp_layer {
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
-       // excluded-positions = <999>;
+        excluded-positions = <38 39 40>;
     };
 
 };
