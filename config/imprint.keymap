@@ -15,7 +15,7 @@
 #define MOUSE 5
 
 #define COMBO_TAP_TIME 15
-#define COMBO_PRIOR_IDLE_TIME 30
+#define COMBO_PRIOR_IDLE_TIME 40
 
 
 / {
