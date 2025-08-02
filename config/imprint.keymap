@@ -141,21 +141,24 @@
                      , <&macro_pause_for_release>
                      , <&macro_release &mkp LCLK &to BASE>;
         };
+        dmlc_exit: dmlc_exit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &mkp LCLK &mkp LCLK &to BASE>;
+        };
         mrc_exit: mrc_exit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &mkp RCLK>
+            bindings = <&macro_press &mkp RCLK &to BASE>
                      , <&macro_pause_for_release>
-                     , <&macro_release &mkp RCLK>
-                     , <&tog MOUSE>;
+                     , <&macro_release &mkp RCLK &to BASE>;
         };
         mmc_exit: mmc_exit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &mkp MCLK>
+            bindings = <&macro_press &mkp MCLK &to BASE>
                      , <&macro_pause_for_release>
-                     , <&macro_release &mkp MCLK>
-                     , <&tog MOUSE>;
+                     , <&macro_release &mkp MCLK &to BASE>;
         };
         vim_word: vim_next_word {
             compatible = "zmk,behavior-macro";
@@ -275,7 +278,7 @@
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mkp RCLK  &mkp MCLK  &mlc_exit  &to BASE            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mrc_exit  &mmc_exit  &mlc_exit  &dmlc_exit        &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans                               &trans  &trans  &trans  &trans  &trans
                                       &trans     &trans  &trans    &trans  &trans  &trans
@@ -302,10 +305,8 @@
 
 &trackball_peripheral_listener {
     input-processors =
-//     activate layer MOUSE within 5000ms of the trackball moving
-    <&zip_temp_layer MOUSE 0>;
-    //zmk_keymap_layer_activate(MOUSE);
-    //bindings = <&to MOUSE>;
+        // activate layer MOUSE within 5000ms of the trackball moving
+        <&zip_temp_layer MOUSE 9000>;
  };
 
 //left hand trackball configuration
