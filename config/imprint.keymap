@@ -276,7 +276,7 @@
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mkp RCLK  &mkp MCLK  &mlc_exit  &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans                               &trans  &trans  &trans  &trans  &trans
                                       &trans     &trans  &trans    &trans  &trans  &trans
