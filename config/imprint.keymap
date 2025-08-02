@@ -138,7 +138,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_press &mkp LCLK>
-                     //, <&macro_pause_for_release>
+                     , <&macro_pause_for_release>
                      //, <&macro_release &mkp LCLK>
                      , <&to BASE>;
         };
