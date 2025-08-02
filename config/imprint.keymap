@@ -193,7 +193,7 @@
     zip_temp_layer: zip_temp_layer {
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
-        excluded-positions = <38 39 40>;
+        excluded-positions = <38 39 40 41>;
     };
 
 };
@@ -276,7 +276,7 @@
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mkp RCLK  &mkp MCLK  &mlc_exit  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mkp RCLK  &mkp MCLK  &mlc_exit  &to BASE            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans                               &trans  &trans  &trans  &trans  &trans
                                       &trans     &trans  &trans    &trans  &trans  &trans
