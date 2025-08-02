@@ -214,8 +214,8 @@
 &to 0      &mt LCTRL A   &rl SYM S &rl NUM D &rl NAV F   &kp G                   &kp H      &rl NAV J &rl NUM K &rl SYM L  &mt LCTRL SEMI  &kp SQT
 &kp LSHFT  &kp Z         &kp X     &kp C      &kp V      &kp B                   &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH        &kp RSHFT
 &trans     &trans        &kp LGUI  &kp LALT  &trans                                         &trans    &kp LBKT   &kp RBKT  &trans    &trans
-                   &mt LSHIFT SPACE   &mt LCTRL ESC  &kp ESC                &kp ESC   &mt LCTRL ESC  &mt LSHIFT SPACE
-                   &mo NAV            &mo MOUSE      &mo CONTROL            &kp CAPS  &mo NAV        &mo SYM
+                   &mt LSHIFT SPACE   &mt LCTRL ESC  &kp ESC                &kp ESC      &mt LCTRL ESC  &mt LSHIFT SPACE
+                   &mo NAV            &mo MOUSE      &mo CONTROL            &mo CONTROL  &mo NAV        &mo SYM
             >;
         };
 
