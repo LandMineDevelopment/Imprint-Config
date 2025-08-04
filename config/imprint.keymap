@@ -122,8 +122,8 @@
             timeout-ms = <COMBO_TAP_TIME>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE_TIME>;
             key-positions = <51 52>;
-            bindings = <&tog NAV>;
-            layers = <BASE>;
+            bindings = <&tog SCROLL>;
+            layers = <BASE MOUSE SCROLL>;
         };
         combo_paste {
             timeout-ms = <COMBO_TAP_TIME>;
