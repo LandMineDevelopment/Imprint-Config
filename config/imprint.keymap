@@ -337,7 +337,7 @@
         // activate layer MOUSE within 5000ms of the trackball moving
         <&zip_temp_layer MOUSE 9000>;
     scroller {
-        layers = <1>;
+        layers = <SCROLL>;
         input-processors =
         // multiply sensitivity by 1, divide by 3 (make it slower for scrolling),
         <&zip_xy_scaler 1 5>,
