@@ -8,8 +8,8 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 #define BASE 0
-#define SCROLL 1
-#define MOUSE 2
+#define MOUSE 1
+#define SCROLL 2
 #define NUM 3
 #define NAV 4
 #define SYM 5
@@ -92,11 +92,17 @@
             key-positions = <32 33>;
             bindings = <&bspc_del>;
         };
-        combo_back2 {
+        combo_undo {
             timeout-ms = <COMBO_TAP_TIME>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE_TIME>;
             key-positions = <26 27>;
-            bindings = <&bspc_del>;
+            bindings = <&kp LC(Z)>;
+        };
+        combo_redo {
+            timeout-ms = <COMBO_TAP_TIME>;
+            require-prior-idle-ms = <COMBO_PRIOR_IDLE_TIME>;
+            key-positions = <27 28>;
+            bindings = <&kp LC(Y)>;
         };
         combo_num_layer {
             timeout-ms = <COMBO_TAP_TIME>;
@@ -109,6 +115,13 @@
             timeout-ms = <COMBO_TAP_TIME>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE_TIME>;
             key-positions = <50 51>;
+            bindings = <&tog NAV>;
+            layers = <BASE>;
+        };
+        combo_scroll_layer {
+            timeout-ms = <COMBO_TAP_TIME>;
+            require-prior-idle-ms = <COMBO_PRIOR_IDLE_TIME>;
+            key-positions = <51 52>;
             bindings = <&tog NAV>;
             layers = <BASE>;
         };
@@ -223,18 +236,6 @@
             >;
         };
 
-        Auto_Scroll_Layer {
-            bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans                               &trans  &trans  &trans  &trans  &trans
-                                      &trans     &trans  &trans    &trans  &trans  &trans
-                                      &trans     &trans  &trans    &trans  &trans  &trans
-            >;
-        };
 
         Auto_Mouse_Layer {
             bindings = <
@@ -242,6 +243,19 @@
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &mrc_exit  &mmc_exit  &mlc_exit  &dmlc_exit        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans                               &trans  &trans  &trans  &trans  &trans
+                                      &trans     &trans  &trans    &trans  &trans  &trans
+                                      &trans     &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        Auto_Scroll_Layer {
+            bindings = <
+&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans     &trans                               &trans  &trans  &trans  &trans  &trans
                                       &trans     &trans  &trans    &trans  &trans  &trans
