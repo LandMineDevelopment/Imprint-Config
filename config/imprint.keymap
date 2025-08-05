@@ -348,6 +348,3 @@
         <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;    
     };
  };
-
-
-x
