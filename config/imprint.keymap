@@ -36,6 +36,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp>, <&kp>;
             display-name = "Mod-Tap";
+            require-prior-idle-ms = <150>;
         };
         
         ltt: layer_tap_toggle {
@@ -228,7 +229,7 @@
 &kp ESC    &kp F1        &kp F2    &kp F3       &kp F4     &kp F5                  &kp F6     &kp F7    &kp F8     &kp F9    &kp F10         &kp F11
 &kp EQUAL  &kp N1        &kp N2    &kp N3       &kp N4     &kp N5                  &kp N6     &kp N7    &kp N8     &kp N9    &kp N0          &kp MINUS
 &kp TAB    &kp Q         &kp W     &kp E        &kp R      &kp T                   &kp Y      &kp U     &kp I      &kp O     &kp P           &kp BSLH
-&to 0      &mt LCTRL A   &rl SYM S &rl NUM D    &rl NAV F   &kp G                  &kp H      &rl NAV J &rl NUM K &rl SYM L  &mt LCTRL SEMI  &kp SQT
+&to 0      &mt LCTRL A   &mt SYM S &mt NUM D    &mt NAV F   &kp G                  &kp H      &mt NAV J &mt NUM K &mt SYM L  &mt LCTRL SEMI  &kp SQT
 &kp LSHFT  &kp Z         &kp X     &rl SCROLL C &kp V      &kp B                   &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH        &kp RSHFT
 &trans     &trans        &kp LGUI  &kp LALT  &trans                                         &trans    &kp LBKT   &kp RBKT  &trans    &trans
                    &mt LSHIFT SPACE   &mt LCTRL ESC  &kp ESC                &kp ESC      &mt LCTRL ESC  &mt LSHIFT SPACE
@@ -348,3 +349,5 @@
     };
  };
 
+
+x
