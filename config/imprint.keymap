@@ -244,7 +244,7 @@
 &trans     &trans        &kp LGUI  &kp LALT  &trans                                         &trans    &kp LBKT   &kp RBKT  &trans    &trans
                    &mt LSHIFT SPACE   &mt LCTRL ESC  &kp ESC                &kp ESC      &mt LCTRL ESC  &mt LSHIFT SPACE
                    &mo NAV            &tog SCROLL    &mo CONTROL            &mo CONTROL  &mo NAV        &mo SYM
-            >;l
+            >;
         };
 
 
