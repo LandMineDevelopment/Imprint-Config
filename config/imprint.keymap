@@ -122,6 +122,12 @@
             key-positions = <27 28>;
             bindings = <&kp LC(Y)>;
         };
+        combo_save {
+            timeout-ms = <COMBO_TAP_TIME>;
+            require-prior-idle-ms = <COMBO_PRIOR_IDLE_TIME>;
+            key-positions = <26 28>;
+            bindings = <&kp LC(S)>;
+        };
         combo_num_layer {
             timeout-ms = <COMBO_TAP_TIME>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE_TIME>;
