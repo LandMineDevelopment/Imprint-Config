@@ -28,7 +28,7 @@
             bindings = <&mt LSHIFT BSPC>, <&kp DELETE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
+            
         lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -96,11 +96,18 @@
             bindings = <&exit_num>;
             layers = <NUM>;
         };
-        combo_back {
+       combo_ctrl_back {
             timeout-ms = <COMBO_TAP_TIME>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE_TIME>;
             require-prior-idle-ms = <COMBO_PRIOR_IDLE_TIME>;
             key-positions = <32 33>;
+            bindings = <&kp LC(BSPC)>;
+        }; 
+        combo_back {
+            timeout-ms = <COMBO_TAP_TIME>;
+            require-prior-idle-ms = <COMBO_PRIOR_IDLE_TIME>;
+            require-prior-idle-ms = <COMBO_PRIOR_IDLE_TIME>;
+            key-positions = <31 32>;
             bindings = <&bspc_del>;
         };
         combo_undo {
