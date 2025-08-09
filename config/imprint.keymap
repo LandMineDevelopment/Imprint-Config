@@ -8,12 +8,12 @@
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 #define BASE 0
-#define MOUSE 1
-#define SCROLL 2
-#define NUM 3
-#define NAV 4
-#define SYM 5
-#define CONTROL 6
+#define NUM 1
+#define NAV 2
+#define SYM 3
+#define CONTROL 4
+#define MOUSE 5
+#define SCROLL 6
 
 
 #define COMBO_TAP_TIME 15
@@ -255,35 +255,8 @@
 &to 0      &mt LCTRL A   &lt SYM S &lt NUM D    &lt NAV F  &kp G                   &kp H      &lt NAV J &lt NUM K  &lt SYM L &mt LCTRL SEMI  &kp SQT
 &kp LSHFT  &kp Z         &kp X     &rl SCROLL C &kp V      &kp B                   &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH        &kp RSHFT
 &trans     &trans        &kp LGUI  &kp LALT  &trans                                         &trans    &kp LBKT   &kp RBKT  &trans    &trans
-                   &mt LSHIFT SPACE   &mt LCTRL ESC  &kp ESC                &kp ESC      &mt LCTRL ESC  &mt LSHIFT SPACE
+                   &mt LSHIFT SPACE   &mt LCTRL ESC  &kp ESC                &caps_word   &mt LCTRL ESC  &mt LSHIFT SPACE
                    &mo NAV            &tog SCROLL    &mo CONTROL            &mo CONTROL  &mo NAV        &mo SYM
-            >;
-        };
-
-
-        Auto_Mouse_Layer {
-            bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mrc_exit  &tog SCROLL &mlc_exit &dmlc_exit        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans                               &trans  &trans  &trans  &trans  &trans
-                                      &trans     &trans  &trans    &trans  &trans  &trans
-                                      &trans     &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        Auto_Scroll_Layer {
-            bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &tog SCROLL &trans    &tog SCROLL            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans                               &trans  &trans  &trans  &trans  &trans
-                                      &trans     &trans  &trans    &trans  &trans  &trans
-                                      &trans     &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -336,6 +309,32 @@
 &to 4        &trans        &trans        &trans        &trans                                        &trans           &trans           &trans           &trans           &to 4
                                                        &trans        &trans        &trans    &trans  &trans           &trans
                                                        &trans        &trans        &trans    &trans  &trans           &trans
+            >;
+        };
+    
+        Auto_Mouse_Layer {
+            bindings = <
+&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mrc_exit  &tog SCROLL &mlc_exit &dmlc_exit        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans                               &trans  &trans  &trans  &trans  &trans
+                                      &mkp LCLK  &trans  &trans    &mkp LCLK &trans  &trans
+                                      &trans     &trans  &trans    &trans    &trans  &trans
+            >;
+        };
+
+        Auto_Scroll_Layer {
+            bindings = <
+&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &tog SCROLL &trans    &tog SCROLL            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans                               &trans  &trans  &trans  &trans  &trans
+                                      &trans     &trans  &trans    &trans  &trans  &trans
+                                      &trans     &trans  &trans    &trans  &trans  &trans
             >;
         };
 
