@@ -234,7 +234,7 @@
     zip_temp_layer: zip_temp_layer {
         compatible = "zmk,input-processor-temp-layer";
         #input-processor-cells = <2>;
-        excluded-positions = <38 39 40 41>;
+        excluded-positions = <38 39 40 41 70 73>;
     };
 
 };
