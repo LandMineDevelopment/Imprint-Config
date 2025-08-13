@@ -176,28 +176,28 @@
         mlc_exit: mlc_exit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &mkp LCLK &to BASE>
+            bindings = <&macro_press &mkp LCLK &tog MOUSE>
                      , <&macro_pause_for_release>
-                     , <&macro_release &mkp LCLK &to BASE>;
+                     , <&macro_release &mkp LCLK &tog MOUSE>;
         };
         dmlc_exit: dmlc_exit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &mkp LCLK &mkp LCLK &to BASE>;
+            bindings = <&macro_tap &mkp LCLK &mkp LCLK &tog MOUSE>;
         };
         mrc_exit: mrc_exit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &mkp RCLK &to BASE>
+            bindings = <&macro_press &mkp RCLK &tog MOUSE>
                      , <&macro_pause_for_release>
-                     , <&macro_release &mkp RCLK &to BASE>;
+                     , <&macro_release &mkp RCLK &tog MOUSE>;
         };
         mmc_exit: mmc_exit {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press &mkp MCLK &to BASE>
+            bindings = <&macro_press &mkp MCLK &tog MOUSE>
                      , <&macro_pause_for_release>
-                     , <&macro_release &mkp MCLK &to BASE>;
+                     , <&macro_release &mkp MCLK &tog MOUSE>;
         };
         vim_word: vim_next_word {
             compatible = "zmk,behavior-macro";
