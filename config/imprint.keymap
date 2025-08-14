@@ -256,7 +256,7 @@
 &kp LSHFT  &kp Z         &kp X     &rl SCROLL C &kp V      &kp B                   &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH        &kp RSHFT
 &trans     &trans        &kp LGUI  &kp LALT  &trans                                         &trans    &kp LBKT   &kp RBKT  &trans    &trans
                    &mt LSHIFT SPACE   &mt LCTRL ESC  &kp ESC                &caps_word   &mt LCTRL ESC  &mt LSHIFT SPACE
-                   &mo NAV            &tog SCROLL    &mo CONTROL            &mo CONTROL  &mo NAV        &mo SYM
+                   &mt LSHIFT SPACE   &mt LCTRL ESC  &mo CONTROL            &mo CONTROL  &mt LCTRL ESC  &mt LSHIFT SPACE
             >;
         };
 
