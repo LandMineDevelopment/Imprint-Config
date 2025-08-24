@@ -256,7 +256,7 @@
 &kp TAB    &kp Q         &kp W     &kp E        &kp R      &kp T                   &kp Y      &kp U     &kp I      &kp O     &kp P           &kp BSLH
 &to 0      &mt LCTRL A   &lt SYM S &lt NUM D    &lt NAV F  &kp G                   &kp H      &lt NAV J &lt NUM K  &lt SYM L &mt LCTRL BSPC  &kp SEMI
 &kp LSHFT  &kp Z         &kp X     &rl SCROLL C &kp V      &kp B                   &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH        &kp RSHFT
-&trans     &trans        &kp LGUI  &kp LALT  &trans                                           &trans    &bspc_del  &kp LC(BSPC)   &tog CLASSIC    &tog GAMING
+&trans     &trans        &kp LGUI  &kp LALT  &trans                                           &trans    &kp RALT   &kp RGUI  &tog CLASSIC    &tog GAMING
                    &mt LSHIFT SPACE   &mt LCTRL ESC  &kp ESC                &caps_word   &mt LCTRL ESC  &mt LSHIFT SPACE
                    &mt LSHIFT SPACE   &mt LCTRL ESC  &mo CONTROL            &mo CONTROL  &mt LCTRL ESC  &mt LSHIFT SPACE
             >;
