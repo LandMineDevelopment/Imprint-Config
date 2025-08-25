@@ -9,8 +9,8 @@
 
 #define BASE 0
 #define NUM 1
-#define NAV 2
-#define SYM 3
+#define SYM 2
+#define NAV 3
 #define CONTROL 4
 #define CLASSIC 5
 #define GAMING 6
