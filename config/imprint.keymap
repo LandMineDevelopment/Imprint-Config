@@ -251,27 +251,40 @@
 
         default_layer {
             bindings = <
-&kp ESC    &kp F1        &kp F2    &kp F3       &kp F4     &kp F5                  &kp F6     &kp F7    &kp F8     &kp F9    &kp F10         &kp F11
-&kp EQUAL  &kp N1        &kp N2    &kp N3       &kp N4     &kp N5                  &kp N6     &kp N7    &kp N8     &kp N9    &kp N0          &kp MINUS
-&kp TAB    &kp Q         &kp W     &kp E        &kp R      &kp T                   &kp Y      &kp U     &kp I      &kp O     &kp P           &kp BSLH
-&to 0      &mt LCTRL A   &lt SYM S &lt NUM D    &lt NAV F  &kp G                   &kp H      &lt NAV J &lt NUM K  &lt SYM L &mt LCTRL BSPC  &kp SEMI
-&kp LSHFT  &kp Z         &kp X     &rl SCROLL C &kp V      &kp B                   &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH        &kp RSHFT
-&trans     &trans        &kp LGUI  &kp LALT  &trans                                           &trans    &kp RALT   &kp RGUI  &tog CLASSIC    &tog GAMING
-                   &mt LSHIFT SPACE   &mt LCTRL ESC  &kp ESC                &caps_word   &mt LCTRL ESC  &mt LSHIFT SPACE
-                   &mt LSHIFT SPACE   &mt LCTRL ESC  &mo CONTROL            &mo CONTROL  &mt LCTRL ESC  &mt LSHIFT SPACE
+&kp ESC    &kp F1        &kp F2    &kp F3       &kp F4     &kp F5                  &kp F6     &kp F7     &kp F8        &kp F9     &kp F10         &kp F11
+&kp EQUAL  &kp N1        &kp N2    &kp N3       &kp N4     &kp N5                  &kp N6     &kp N7     &kp N8        &kp N9     &kp N0          &kp MINUS
+&kp TAB    &kp Q         &kp W     &kp E        &kp R      &kp T                   &kp Y      &kp U      &kp I         &kp O      &kp P           &kp BSLH
+&to 0      &mt LALT A    &mt LCTL S &mt LSHIFT D &mt LGUI F  &kp G                 &kp H      &mt LGUI J &mt LSHIFT K  &mt LCTL L &mt LALT SEMI   &kp SEMI
+&kp LSHFT  &kp Z         &kp X     &rl SCROLL C &kp V      &kp B                   &kp N      &kp M     &kp COMMA      &kp DOT    &kp FSLH        &kp RSHFT
+&trans     &kp LNLCK     &kp LGUI  &kp LALT  &trans                                           &trans    &kp RALT       &kp RGUI   &tog CLASSIC    &tog GAMING
+                   &lt NAV LC(BSPC) &lt NUM ESC    &kp ESC                &caps_word   &lt NAV LC(BSPC) &bspc_del
+                   &lt SYM SPACE    &mt LCTRL TAB  &mo CONTROL            &mo CONTROL  &mt LCTRL RET    &mt LSHIFT SPACE
             >;
         };
 
         Numpad_Layer {
             bindings = <
-&trans   &trans  &trans     &trans    &trans  &trans            &trans  &trans     &trans     &trans     &trans  &trans
-&trans   &trans  &trans     &trans    &trans  &trans            &trans  &trans     &trans     &trans     &trans  &trans
-&trans   &trans  &trans     &trans    &trans  &trans            &trans  &kp KP_N7  &kp KP_N8  &kp KP_N9  &trans  &trans  
-&trans   &trans  &kp UNDER  &kp COMMA &kp DOT &tog NUM          &trans  &kp KP_N4  &kp KP_N5  &kp KP_N6  &trans  &trans
-&trans   &trans  &trans     &trans    &trans  &trans            &trans  &kp KP_N1  &kp KP_N2  &kp KP_N3  &trans  &trans
-&trans   &trans  &trans     &trans  &trans                              &trans     &kp KP_N0  &trans     &trans  &trans
+&trans   &trans  &trans     &trans    &trans   &trans            &trans  &trans          &trans            &trans          &trans  &trans
+&kp F12  &kp F1  &kp F2     &kp F3    &kp F4   &kp F5            &kp F6  &kp F7          &kp F8            &kp F9          &kp F10 &kp F11 
+&trans   &trans  &trans     &trans    &trans   &trans            &trans  &kp KP_N7       &kp KP_N8         &kp KP_N9       &trans  &trans  
+&trans   &trans  &trans     &trans    &trans   &tog NUM          &trans  &mt LGUI KP_N4  &mt LSHIFT KP_N5  &mt LCTL KP_N6  &trans  &trans
+&trans   &trans  &trans     &trans    &trans   &trans            &trans  &kp KP_N1       &kp KP_N2         &kp KP_N3       &trans  &trans
+&trans   &trans  &trans     &trans  &trans                              &trans           &kp KP_N0         &trans          &trans  &trans
                             &trans  &trans  &trans              &trans  &trans     &trans
                             &trans  &trans  &trans              &trans  &trans     &trans
+            >;
+        };
+
+        Symbols_Layer {
+            bindings = <
+&trans  &trans           &trans         &trans          &trans        &trans                &trans    &trans        &trans           &trans          &trans          &trans
+&trans  &trans           &trans         &trans          &trans        &trans                &trans    &trans        &trans           &trans          &trans          &trans
+&trans  &trans           &kp CARET      &kp LT          &kp GT        &trans                &trans    &kp EXCL      &kp PLUS         &kp EQUAL       &trans          &trans
+&trans  &mt LALT TILDE   &mt LCTL MINUS &mt LSHIFT LBKT &mt LGUI RBKT &kp SLASH             &kp STAR  &mt LGUI LPAR &mt LSHIFT RPAR  &mt LCTL UNDER  &mt LALT GRAVE  &trans
+&trans  &trans           &kp AT         &kp PIPE        &kp AMPS      &trans                &trans    &kp SQT       &kp DQT          &kp PRCNT       &trans          &trans
+&trans  &trans  &trans         &trans          &trans                                                 &trans        &trans           &trans          &trans          &trans
+                                      &trans     &trans  &trans                                &trans  &trans  &trans
+                                      &trans     &trans  &trans                                &trans  &trans  &trans        
             >;
         };
 
@@ -285,19 +298,6 @@
 &trans  &trans    &trans    &trans  &trans                                       &trans    &trans    &trans     &trans     &trans
                                 &trans  &trans  &trans                      &trans  &trans    &trans
                                 &trans  &trans  &trans                      &trans  &trans    &trans
-            >;
-        };
-
-        Symbols_Layer {
-            bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans            &trans    &trans   &trans    &trans     &trans  &trans
-&kp F1  &kp F2  &kp F3     &kp F4     &kp F5     &kp F6            &kp F7    &kp F8   &kp F9    &kp F10    &kp F11 &kp F12
-&trans  &trans  &kp CARET  &kp LT     &kp GT     &trans            &trans    &kp EXCL &kp PLUS  &kp EQUAL  &trans  &trans
-&trans  &trans  &kp MINUS  &kp LBKT  &kp RBKT    &kp SLASH         &kp STAR  &kp LPAR &kp RPAR  &kp UNDER  &trans  &trans
-&trans  &trans  &kp AT     &kp PIPE  &kp AMPS    &trans            &trans    &kp SQT  &kp DQT   &kp PRCNT  &trans  &trans
-&trans  &trans  &trans     &trans     &trans                                 &trans   &trans    &trans  &trans  &trans
-                                      &trans     &trans  &trans    &trans  &trans  &trans
-                                      &trans     &trans  &trans    &trans  &trans  &trans        
             >;
         };
 
