@@ -34,7 +34,7 @@
         lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             tapping-term-ms = <200>;
             bindings = <&mo>, <&kp>;
             display-name = "Mod-Tap";
@@ -277,12 +277,12 @@
 
         Symbols_Layer {
             bindings = <
-&trans  &trans           &trans         &trans          &trans        &trans                &trans    &trans        &trans           &trans          &trans          &trans
-&trans  &trans           &trans         &trans          &trans        &trans                &trans    &trans        &trans           &trans          &trans          &trans
-&trans  &trans           &kp CARET      &kp LT          &kp GT        &trans                &trans    &kp EXCL      &kp PLUS         &kp EQUAL       &trans          &trans
-&trans  &mt LALT TILDE   &mt LCTL MINUS &mt LSHIFT LBKT &mt LGUI RBKT &kp SLASH             &kp STAR  &mt LGUI LPAR &mt LSHIFT RPAR  &mt LCTL UNDER  &mt LALT GRAVE  &trans
-&trans  &trans           &kp AT         &kp PIPE        &kp AMPS      &trans                &trans    &kp SQT       &kp DQT          &kp PRCNT       &trans          &trans
-&trans  &trans  &trans         &trans          &trans                                                 &trans        &trans           &trans          &trans          &trans
+&trans  &trans           &trans         &trans          &trans        &trans                &trans    &trans          &trans             &trans             &trans          &trans
+&trans  &trans           &trans         &trans          &trans        &trans                &trans    &trans          &trans             &trans             &trans          &trans
+&trans  &trans           &kp CARET      &kp LT          &kp GT        &trans                &trans    &kp EXCL        &kp PLUS           &kp EQUAL          &trans          &trans
+&trans  &mt LALT TILDE   &mt LCTL MINUS &mt LSHIFT LBKT &mt LGUI RBKT &kp SLASH             &kp STAR  &mt LGUI LS(N9) &mt LSHIFT LS(N0)  &mt LCTL LS(MINUS) &mt LALT GRAVE  &trans
+&trans  &trans           &kp AT         &kp PIPE        &kp AMPS      &trans                &trans    &kp SQT         &kp DQT            &kp PRCNT          &trans          &trans
+&trans  &trans  &trans         &trans          &trans                                                 &trans          &trans             &trans             &trans          &trans
                                       &trans     &trans  &trans                                &trans  &trans  &trans
                                       &trans     &trans  &trans                                &trans  &trans  &trans        
             >;
