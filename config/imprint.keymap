@@ -72,8 +72,8 @@
 &trans  &trans    &trans    &trans      &trans        &trans             &trans  &trans    &trans    &trans     &trans     &trans
 &trans  &trans    &trans    &trans      &trans        &trans             &trans  &trans    &trans    &trans     &trans     &trans
 &trans  &trans    &trans    &trans      &trans        &trans             &trans  &kp HOME  &kp UP    &kp END    &trans     &trans
-&trans  &trans    &trans    &trans      &trans        &tog NAV           &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
-&trans  &trans    &trans    &trans      &trans        &trans             &trans  &kp PG_UP &trans    &kp PG_DN  &trans     &trans
+&trans  &trans    &trans    &kp LCTL    &trans        &tog NAV           &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans     &trans
+&trans  &trans    &kp LALT  &kp LGUI    &trans        &trans             &trans  &kp PG_UP &trans    &kp PG_DN  &trans     &trans
 &trans  &trans    &trans    &trans  &trans                                       &trans    &trans    &trans     &trans     &trans
                                 &trans  &trans  &trans                      &trans  &trans    &trans
                                 &trans  &trans  &trans                      &trans  &trans    &trans
