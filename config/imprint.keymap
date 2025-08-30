@@ -183,14 +183,14 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        bspc_k: backspace_delete {
+        bspc_k: backspace_k {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&mt LCTL K>, <&bspc_del>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
 
-        bspc_l: backspace_delete {
+        bspc_l: backspace_l {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp L>, <&kp LC(BSPC)>;
