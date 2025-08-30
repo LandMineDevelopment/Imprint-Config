@@ -207,7 +207,7 @@
         bspc_l: backspace_l {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp L>, <&kp LC(BSPC)>;
+            bindings = <&lt SYM L>, <&kp LC(BSPC)>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
 
