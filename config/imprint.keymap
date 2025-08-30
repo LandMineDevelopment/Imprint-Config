@@ -11,7 +11,7 @@
 #define NUM 1
 #define SYM 2
 #define NAV 3
-#define NAT 4
+#define NAW 4
 #define NAC 5
 #define CONTROL 6
 #define CLASSIC 7
@@ -35,7 +35,7 @@
 &kp ESC    &kp F1       &kp F2     &kp F3      &kp F4     &kp F5                  &kp F6     &kp F7     &kp F8         &kp F9       &kp F10       &kp F11
 &kp EQUAL  &kp N1       &kp N2     &kp N3      &kp N4     &kp N5                  &kp N6     &kp N7     &kp N8         &kp N9       &kp N0        &kp MINUS
 &kp TAB    &kp Q        &kp W      &lt NAC E   &lt NUM R  &kp T                   &kp Y      &kp U      &tab_i         &ent_o       &kp P         &kp BSLH
-&to 0      &kp A        &lt SYM S  &lt NAV D   &lt NAT F  &kp G                   &kp H      &mt LGUI J &bspc_k        &bspc_l      &kp P         &kp SEMI
+&to 0      &kp A        &lt SYM S  &lt NAV D   &lt NAW F  &kp G                   &kp H      &mt LGUI J &bspc_k        &bspc_l      &kp P         &kp SEMI
 &kp LSHFT  &kp Z        &mt LALT X &mt LGUI C  &mt LCTL V &kp B                   &kp N      &mt LCTL M &mt LGUI COMMA &mt LALT DOT &kp FSLH      &kp RSHFT
 &trans     &kp KP_NLCK  &kp LGUI   &kp LALT    &trans                                        &trans     &kp RALT       &kp RGUI     &tog CLASSIC  &tog GAMING
                    &lt NAV ESC       &lt NUM ESC    &kp ESC                &caps_word   &lt NAV LC(BSPC) &caps_word
@@ -87,7 +87,7 @@
 &trans  &trans    &trans    &trans      &trans        &trans             &trans  &trans          &trans         &trans           &trans     &trans
 &trans  &trans    &trans    &trans      &trans        &trans             &trans  &trans          &trans         &trans           &trans     &trans
 &trans  &trans    &trans    &trans      &trans        &trans             &trans  &kp HOME        &kp LG(UP)     &kp END          &trans     &trans
-&trans  &trans    &trans    &kp LCTL    &trans        &tog NAT           &trans  &kp LG(LEFT)    &kp LG(DOWN)   &kp LG(RIGHT)    &trans     &trans
+&trans  &trans    &trans    &kp LCTL    &trans        &tog NAW           &trans  &kp LG(LEFT)    &kp LG(DOWN)   &kp LG(RIGHT)    &trans     &trans
 &trans  &trans    &kp LALT  &kp LGUI    &trans        &trans             &trans  &kp PG_UP       &trans         &kp PG_DN        &trans     &trans
 &trans  &trans    &trans    &trans  &trans                                       &trans          &trans         &trans           &trans     &trans
                                 &trans  &trans  &trans                      &trans  &trans    &trans
