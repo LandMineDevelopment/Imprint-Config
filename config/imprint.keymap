@@ -35,8 +35,8 @@
 &kp ESC    &kp F1       &kp F2     &kp F3      &kp F4     &kp F5                  &kp F6     &kp F7     &kp F8         &kp F9       &kp F10       &kp F11
 &kp EQUAL  &kp N1       &kp N2     &kp N3      &kp N4     &kp N5                  &kp N6     &kp N7     &kp N8         &kp N9       &kp N0        &kp MINUS
 &kp TAB    &kp Q        &kp W      &lt NAC E   &lt NUM R  &kp T                   &kp Y      &kp U      &tab_i         &ent_o       &kp P         &kp BSLH
-&to 0      &kp A        &lt SYM S  &lt NAV D   &lt NAT F  &kp G                   &kp H      &mt LGUI J &bspc_k        &bspc_l      &kp SEMI      &kp SEMI
-&kp LSHFT  &kp Z        &mt LALT X &mt LGUI C  &mt LCTL V &kp B                   &kp N      &mt LCTR M &mt LGUI COMMA &mt LALT DOT &kp FSLH      &kp RSHFT
+&to 0      &kp A        &lt SYM S  &lt NAV D   &lt NAT F  &kp G                   &kp H      &mt LGUI J &bspc_k        &bspc_l      &kp P         &kp SEMI
+&kp LSHFT  &kp Z        &mt LALT X &mt LGUI C  &mt LCTL V &kp B                   &kp N      &mt LCTL M &mt LGUI COMMA &mt LALT DOT &kp FSLH      &kp RSHFT
 &trans     &kp KP_NLCK  &kp LGUI   &kp LALT    &trans                                        &trans     &kp RALT       &kp RGUI     &tog CLASSIC  &tog GAMING
                    &lt NAV ESC       &lt NUM ESC    &kp ESC                &caps_word   &lt NAV LC(BSPC) &caps_word
                    &mt LSHFT SPACE  &mt LCTRL TAB  &mo CONTROL             &mo CONTROL  &mt LCTRL RET    &mt LSHFT SPACE
@@ -60,8 +60,8 @@
             bindings = <
 &trans  &trans     &trans     &trans    &trans        &trans                &trans    &trans    &trans    &trans     &trans     &trans
 &trans  &trans     &trans     &trans    &kp LS(RBKT)  &trans                &trans    &trans    &trans    &trans     &trans     &trans
-&trans  &trans     &kp CARET  &kp LT    &kp GT        &trans                &trans    &kp EXCL  &kp PLUS  &kp EQUAL  &trans     &trans
-&trans  &kp TILDE  &kp MINUS  &kp LBKT  &kp RBKT      &kp SLASH             &kp STAR  &kp LPAR  &kp RPAR  &kp UNDER  &kp GRAVE  &trans
+&trans  &trans     &kp CARET  &kp LT    &kp GT        &trans                &trans    &kp EXCL  &kp PLUS  &kp EQUAL  &kp GRAVE  &trans
+&trans  &kp TILDE  &kp MINUS  &kp LBKT  &kp RBKT      &kp SLASH             &kp STAR  &kp LPAR  &kp RPAR  &kp UNDER  &kp SEMI   &trans
 &trans  &trans     &kp AT     &kp PIPE  &kp AMPS      &trans                &trans    &kp SQT   &kp DQT   &kp PRCNT  &trans     &trans
 &trans  &trans     &trans     &trans    &trans                                        &trans    &trans    &trans     &trans     &trans
                               &trans    &trans  &trans                                &trans  &trans  &trans
