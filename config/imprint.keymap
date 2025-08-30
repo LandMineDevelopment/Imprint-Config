@@ -12,11 +12,12 @@
 #define SYM 2
 #define NAV 3
 #define NAT 4
-#define CONTROL 5
-#define CLASSIC 6
-#define GAMING 7
-#define MOUSE 8
-#define SCROLL 9
+#define NAC 5
+#define CONTROL 6
+#define CLASSIC 7
+#define GAMING 8
+#define MOUSE 9
+#define SCROLL 10
 
 
 #define COMBO_TAP_TIME 15
@@ -33,9 +34,9 @@
             bindings = <
 &kp ESC    &kp F1       &kp F2     &kp F3      &kp F4     &kp F5                  &kp F6     &kp F7     &kp F8         &kp F9       &kp F10       &kp F11
 &kp EQUAL  &kp N1       &kp N2     &kp N3      &kp N4     &kp N5                  &kp N6     &kp N7     &kp N8         &kp N9       &kp N0        &kp MINUS
-&kp TAB    &kp Q        &kp W      &kp E       &lt NUM R  &kp T                   &kp Y      &kp U      &kp I          &kp O        &kp P         &kp BSLH
-&to 0      &kp A        &lt SYM S  &mt LCTL D  &lt NAV F  &kp G                   &kp H      &mt LGUI J &bspc_k        &bspc_l      &kp SEMI      &kp SEMI
-&kp LSHFT  &kp Z        &mt LALT X &mt LGUI C  &lt NAT V  &kp B                   &kp N      &kp M      &mt LGUI COMMA &mt LALT DOT &kp FSLH      &kp RSHFT
+&kp TAB    &kp Q        &kp W      &lt NAC E   &lt NUM R  &kp T                   &kp Y      &kp U      &tab_i         &ent_o       &kp P         &kp BSLH
+&to 0      &kp A        &lt SYM S  &lt NAV D   &lt NAT F  &kp G                   &kp H      &mt LGUI J &bspc_k        &bspc_l      &kp SEMI      &kp SEMI
+&kp LSHFT  &kp Z        &mt LALT X &mt LGUI C  &mt LCTL V &kp B                   &kp N      &mt LCTR M &mt LGUI COMMA &mt LALT DOT &kp FSLH      &kp RSHFT
 &trans     &kp KP_NLCK  &kp LGUI   &kp LALT    &trans                                        &trans     &kp RALT       &kp RGUI     &tog CLASSIC  &tog GAMING
                    &lt NAV ESC       &lt NUM ESC    &kp ESC                &caps_word   &lt NAV LC(BSPC) &caps_word
                    &mt LSHFT SPACE  &mt LCTRL TAB  &mo CONTROL             &mo CONTROL  &mt LCTRL RET    &mt LSHFT SPACE
@@ -86,7 +87,20 @@
 &trans  &trans    &trans    &trans      &trans        &trans             &trans  &trans          &trans         &trans           &trans     &trans
 &trans  &trans    &trans    &trans      &trans        &trans             &trans  &trans          &trans         &trans           &trans     &trans
 &trans  &trans    &trans    &trans      &trans        &trans             &trans  &kp HOME        &kp LG(UP)     &kp END          &trans     &trans
-&trans  &trans    &trans    &kp LCTL    &trans        &tog NAV           &trans  &kp LG(LEFT)    &kp LG(DOWN)   &kp LG(RIGHT)    &trans     &trans
+&trans  &trans    &trans    &kp LCTL    &trans        &tog NAT           &trans  &kp LG(LEFT)    &kp LG(DOWN)   &kp LG(RIGHT)    &trans     &trans
+&trans  &trans    &kp LALT  &kp LGUI    &trans        &trans             &trans  &kp PG_UP       &trans         &kp PG_DN        &trans     &trans
+&trans  &trans    &trans    &trans  &trans                                       &trans          &trans         &trans           &trans     &trans
+                                &trans  &trans  &trans                      &trans  &trans    &trans
+                                &trans  &trans  &trans                      &trans  &trans    &trans
+            >;
+        };
+
+        Nav_Layer3 {
+            bindings = <
+&trans  &trans    &trans    &trans      &trans        &trans             &trans  &trans          &trans         &trans           &trans     &trans
+&trans  &trans    &trans    &trans      &trans        &trans             &trans  &trans          &trans         &trans           &trans     &trans
+&trans  &trans    &trans    &trans      &trans        &trans             &trans  &kp HOME        &kp LC(UP)     &kp END          &trans     &trans
+&trans  &trans    &trans    &kp LCTL    &trans        &tog NAC           &trans  &kp LC(LEFT)    &kp LC(DOWN)   &kp LC(RIGHT)    &trans     &trans
 &trans  &trans    &kp LALT  &kp LGUI    &trans        &trans             &trans  &kp PG_UP       &trans         &kp PG_DN        &trans     &trans
 &trans  &trans    &trans    &trans  &trans                                       &trans          &trans         &trans           &trans     &trans
                                 &trans  &trans  &trans                      &trans  &trans    &trans
@@ -194,6 +208,20 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp L>, <&kp LC(BSPC)>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+
+        tab_i: tab_i {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp I>, <&kp TAB>;
+            mods = <(MOD_LCTL|MOD_RCTL)>;
+        };
+
+        ent_o: enter_o {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp O>, <&kp RET>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
         };
             
