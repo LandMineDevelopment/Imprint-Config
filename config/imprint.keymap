@@ -232,7 +232,7 @@
             tapping-term-ms = <200>;
             bindings = <&mo>, <&kp>;
             display-name = "Mod-Tap";
-            require-prior-idle-ms = <80>;
+            require-prior-idle-ms = <150>;
         };
 
         mt: mod_tap {
