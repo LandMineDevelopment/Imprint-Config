@@ -34,9 +34,9 @@
             bindings = <
 &kp ESC    &kp F1       &kp F2     &kp F3      &kp F4     &kp F5                  &kp F6     &kp F7     &kp F8         &kp F9       &kp F10       &kp F11
 &kp EQUAL  &kp N1       &kp N2     &kp N3      &kp N4     &kp N5                  &kp N6     &kp N7     &kp N8         &kp N9       &kp N0        &kp MINUS
-&kp TAB    &kp Q        &kp W      &lt NAC E   &lt NUM R  &kp T                   &kp Y      &kp U      &tab_i         &ent_o       &kp P         &kp BSLH
-&to 0      &kp A        &lt SYM S  &lt NAV D   &mt LCTL F &kp G                   &kp H      &mt LCTL J &bspc_k        &bspc_l      &kp P         &kp SEMI
-&kp LSHFT  &kp Z        &mt LALT X &mt LGUI C  &lt NAW V  &kp B                   &kp N      &mt LCTL M &mt LGUI COMMA &mt LALT DOT &kp FSLH      &kp RSHFT
+&kp TAB    &kp Q        &kp W      &llt NAC E  &lt NUM R  &kp T                   &kp Y      &kp U      &tab_i         &ent_o       &kp P         &kp BSLH
+&to 0      &kp A        &lt SYM S  &llt NAV D  &mt LCTL F &kp G                   &kp H      &mt LCTL J &bspc_k        &bspc_l      &kp P         &kp SEMI
+&kp LSHFT  &kp Z        &mt LALT X &mt LGUI C  &llt NAW V &kp B                   &kp N      &mt LCTL M &mt LGUI COMMA &mt LALT DOT &kp FSLH      &kp RSHFT
 &trans     &kp KP_NLCK  &kp LGUI   &kp LALT    &trans                                        &trans     &kp RALT       &kp RGUI     &tog CLASSIC  &tog GAMING
                    &lt NAV ESC       &lt NUM ESC    &kp ESC                &caps_word   &lt NAV LC(BSPC) &caps_word
                    &mt LSHFT SPACE  &mt LCTRL TAB  &mo CONTROL             &mo CONTROL  &mt LCTRL RET    &mt LSHFT SPACE
@@ -233,6 +233,17 @@
             bindings = <&mo>, <&kp>;
             display-name = "Mod-Tap";
             require-prior-idle-ms = <150>;
+        };
+
+        llt: layer_tap_toggle {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&kp>;
+            display-name = "Mod-Tap";
+            require-prior-idle-ms = <150>;
+            hold-trigger-key-positions = <31 32 33 43 44 45 55 56 57>; 
         };
 
         mt: mod_tap {
