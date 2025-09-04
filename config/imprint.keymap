@@ -20,7 +20,7 @@
 
 
 #define COMBO_TAP_TIME 30
-#define COMBO_PRIOR_IDLE_TIME 80
+#define COMBO_PRIOR_IDLE_TIME 120
 
 
 / {
