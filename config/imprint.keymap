@@ -20,8 +20,8 @@
 #define SCROLL 10
 
 
-#define COMBO_TAP_TIME 15
-#define COMBO_PRIOR_IDLE_TIME 40
+#define COMBO_TAP_TIME 40
+#define COMBO_PRIOR_IDLE_TIME 20
 
 
 / {
