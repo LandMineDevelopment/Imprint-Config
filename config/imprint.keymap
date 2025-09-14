@@ -136,14 +136,14 @@
         
         Auto_Mouse_Layer {
             bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mrc_exit  &mo SCROLL &mlc_exit &dmlc_exit        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans     &trans                               &trans  &trans  &trans  &trans  &trans
-                                      &to BASE  &trans  &trans    &mkp LCLK  &trans  &trans
-                                      &mkp LCLK &trans  &trans    &mo SCROLL &trans  &trans
+&trans  &trans  &trans     &trans       &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans       &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans       &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mrc_exit  &scroll_exit &mlc_exit &dmlc_exit        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans       &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans       &trans                               &trans  &trans  &trans  &trans  &trans
+                                        &to BASE  &trans  &trans    &mkp LCLK    &trans  &trans
+                                        &mkp LCLK &trans  &trans    &scroll_exit &trans  &trans
             >;
         };
 
@@ -398,6 +398,14 @@
             bindings = <&macro_press &mkp MCLK &tog MOUSE>
                      , <&macro_pause_for_release>
                      , <&macro_release &mkp MCLK &tog MOUSE>;
+        };
+        scroll_exit: scroll_exit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &mo SCROLL>
+                     , <&macro_pause_for_release>
+                     , <&macro_release &mo SCROLL>
+                     , <macro_tap &tog MOUSE>;
         };
         vim_word: vim_next_word {
             compatible = "zmk,behavior-macro";
