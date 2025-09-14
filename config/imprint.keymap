@@ -85,8 +85,8 @@
             bindings = <
 &trans  &trans    &trans    &trans      &trans        &trans             &trans  &trans          &trans         &trans           &trans     &trans
 &trans  &trans    &trans    &trans      &trans        &trans             &trans  &trans          &trans         &trans           &trans     &trans
-&trans  &trans    &trans    &trans      &trans        &trans             &trans  &kp HOME        &kp LG(UP)     &kp END          &trans     &trans
-&trans  &trans    &trans    &kp LCTL    &trans        &tog NAW           &trans  &kp LG(LEFT)    &kp LG(DOWN)   &kp LG(RIGHT)    &trans     &trans
+&trans  &trans    &trans    &trans      &trans        &trans             &trans  &kp HOME        &win_up        &kp END          &trans     &trans
+&trans  &trans    &trans    &kp LCTL    &trans        &tog NAW           &trans  &win_left       &win_down      &win_right       &trans     &trans
 &trans  &trans    &kp LALT  &kp LGUI    &trans        &trans             &trans  &kp PG_UP       &trans         &kp PG_DN        &trans     &trans
 &trans  &trans    &trans    &trans  &trans                                       &trans          &trans         &trans           &trans     &trans
                                 &trans  &trans  &trans                      &trans  &trans    &trans
@@ -406,6 +406,38 @@
                      , <&macro_pause_for_release>
                      , <&macro_release &mo SCROLL>
                      , <&macro_tap &tog MOUSE>;
+        };
+        win_left: win_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>
+                     , <&macro_pause_for_release>
+                     , <&macro_tap &kp LEFT>
+                     , <&macro_release &kp LGUI>;
+        };
+        win_right: win_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>
+                     , <&macro_pause_for_release>
+                     , <&macro_tap &kp RIGHT>
+                     , <&macro_release &kp LGUI>;
+        };
+        win_up: win_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>
+                     , <&macro_pause_for_release>
+                     , <&macro_tap &kp UP>
+                     , <&macro_release &kp LGUI>;
+        };
+        win_down: win_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LGUI>
+                     , <&macro_pause_for_release>
+                     , <&macro_tap &kp DOWN>
+                     , <&macro_release &kp LGUI>;
         };
         vim_word: vim_next_word {
             compatible = "zmk,behavior-macro";
