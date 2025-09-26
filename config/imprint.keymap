@@ -38,7 +38,7 @@
 &kp LSHFT  &kp Z        &mt LALT X &mt LGUI C  &lt NAW V  &kp B                   &kp N      &mt LCTL M &mt LGUI COMMA &mt LALT DOT &kp FSLH      &kp RSHFT
 &trans     &kp KP_NLCK  &kp LGUI   &kp LALT    &trans                                        &trans     &kp RALT       &kp RGUI     &tog CLASSIC  &tog GAMING
                    &lt NAV ESC       &lt NUM ESC    &kp ESC                &caps_word   &lt NAV LC(BSPC) &caps_word
-                   &mt LSHFT SPACE  &mt LCTRL TAB  &mo CONTROL             &mo CONTROL  &mt LCTRL RET    &mt LSHFT SPACE
+                   &mt LSHFT SPACE   &mo MOUSE      &mo CONTROL             &mo CONTROL  &mt LCTRL RET    &mt LSHFT SPACE
             >;
         };
 
@@ -483,9 +483,9 @@
 // right hand trackball configuration
 
 &trackball_peripheral_listener {
-    input-processors =
+    //input-processors =
         // activate layer MOUSE within 5000ms of the trackball moving
-        <&zip_temp_layer MOUSE 9000>;
+        //<&zip_temp_layer MOUSE 9000>;
     scroller {
         layers = <SCROLL>;
         input-processors =
