@@ -139,7 +139,7 @@
 &trans  &trans  &trans     &trans       &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans       &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans       &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &mrc_exit  &scroll_exit &mlc_exit &dmlc_exit        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mkp RCLK  &mo SCROLL   &mkp LCLK  &mkp LS(RCLK)     &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans       &trans     &trans            &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans     &trans       &trans                               &trans  &trans  &trans  &trans  &trans
                                         &to BASE  &trans  &trans    &mkp LCLK    &trans  &trans
