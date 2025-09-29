@@ -36,7 +36,7 @@
 &kp TAB     &kp Q      &kp W      &kp E       &kp R      &kp T                   &kp Y      &kp U      &kp I          &kp O        &kp P         &kp BSLH
 &to BASE    &lt NUM A  &lt SYM S  &lt NAV D   &mt LCTL F &kp G                   &kp H      &mt LCTL J &kp K          &lt SYM L    &kp P         &kp SEMI
 &kp LSHFT   &kp Z      &mt LALT X &mt LGUI C  &lt NAW V  &kp B                   &kp N      &mt LCTL M &mt LGUI COMMA &mt LALT DOT &kp FSLH      &kp RSHFT
-&kp KP_NLCK &mkp RCLK  &mo SCROLL &mkp LCLK                                                            &kp RALT       &kp RGUI     &tog CLASSIC  &tog GAMING
+&kp KP_NLCK &mkp RCLK  &mo SCROLL &mkp LCLK   &trans                                        &trans     &kp RALT       &kp RGUI     &tog CLASSIC  &tog GAMING
                    &lt NAV ESC       &lt NUM ESC    &kp ESC                 &mo MOUSE    &lt NAV LC(BSPC) &caps_word
                    &mt LSHFT SPACE   &mo MOUSE      &mo CONTROL             &mo CONTROL  &mt LCTRL RET    &mt LSHFT SPACE
             >;
