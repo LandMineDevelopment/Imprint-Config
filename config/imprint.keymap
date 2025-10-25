@@ -59,7 +59,7 @@
             bindings = <
 &trans  &trans     &trans     &trans    &trans        &trans                &trans    &trans    &trans    &trans     &trans     &trans
 &trans  &trans     &trans     &trans    &kp LS(RBKT)  &trans                &trans    &trans    &trans    &trans     &trans     &trans
-&trans  &trans     &kp CARET  &kp LT    &kp GT        &trans                &trans    &kp EXCL  &kp PLUS  &kp EQUAL  &kp GRAVE  &trans
+&trans  &trans     &kp CARET  &kp LT    &kp GT        &kp BSLH              &trans    &kp EXCL  &kp PLUS  &kp EQUAL  &kp GRAVE  &trans
 &trans  &kp TILDE  &kp MINUS  &kp LBKT  &kp RBKT      &kp SLASH             &kp STAR  &lpar     &kp RPAR  &kp UNDER  &kp SEMI   &kp DOLLAR
 &trans  &trans     &kp AT     &kp PIPE  &kp AMPS      &trans                &trans    &kp SQT   &kp DQT   &kp PRCNT  &trans     &trans
 &trans  &trans     &trans     &trans    &trans                                        &trans    &trans    &trans     &trans     &trans
