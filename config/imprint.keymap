@@ -104,7 +104,7 @@
 &to 4        &trans        &trans        &trans        &trans        &trans                  &trans  &trans           &trans           &trans           &trans           &to 4
 &to 4        &trans        &trans        &trans        &trans                                        &trans           &trans           &trans           &trans           &to 4
                                                        &trans        &trans        &trans    &trans  &trans           &trans
-                                                       &trans        &trans        &trans    &trans  &trans           &trans
+                                                       &trans        &trans        &trans    &trans  &trans           &kp PRINTSCREEN
             >;
         };
 
