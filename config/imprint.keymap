@@ -102,7 +102,7 @@
 &sys_reset   &trans        &trans        &trans        &trans        &trans                  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &sys_reset
 &bootloader  &trans        &trans        &trans        &trans        &trans                  &trans           &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &bootloader
 &to 4        &trans        &trans        &trans        &trans        &trans                  &trans  &trans           &trans           &trans           &trans           &to 4
-&to 4        &trans        &trans        &trans        &trans                                        &trans           &trans           &trans           &trans           &to 4
+&to 4        &trans        &trans        &trans        &trans                                        &trans           &trans           &trans           &trans           &kp K_SLEEP
                                                        &trans        &trans        &trans    &trans  &trans           &trans
                                                        &trans        &trans        &trans    &trans  &trans           &kp PRINTSCREEN
             >;
