@@ -9,11 +9,14 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      # Match the stable firmware stack used by Cyboard Studio.
+      revision: v0.3.0
       import: app/west.yml
     - name: zmk-keyboards
       remote: Cyboard-DigitalTailor
-      revision: main
+      # Freeze physical key positions so future upstream changes cannot move
+      # this keymap's bindings or thumb cluster.
+      revision: v2026.07
       import: config/west.yml
   self:
     path: config

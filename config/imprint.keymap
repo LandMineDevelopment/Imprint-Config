@@ -24,7 +24,7 @@
 
 
 / {
-    chosen { zmk,matrix-transform = &imprint_function_row_full_bottom_row; };
+    chosen { zmk,physical-layout = &physical_layout_imprint_function_row_full_bottom_row; };
 
     keymap {
         compatible = "zmk,keymap";
